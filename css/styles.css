@@ -633,6 +633,10 @@ ul {
   color: var(--background-primary);
 }
 
+.footer-contacts {
+  width: 231px;
+}
+
 .footer-contact {
   font-size: 14px;
   line-height: calc(21 / 14);
@@ -699,7 +703,7 @@ ul {
 }
 
 .footer-subscription {
-  margin-left: 23px;
+  margin-left: auto;
 }
 
 .footer-subscription-form {
@@ -843,8 +847,6 @@ ul {
   color: var(--text-secondary);
 }
 
-.modal-form {}
-
 .modal-input-wrap {
   position: relative;
   display: flex;
@@ -899,9 +901,10 @@ ul {
 
 .modal-input-icon {
   position: absolute;
-  top: 50%;
+  /* top: 50%; */
+  bottom: 11px;
   left: 12px;
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
   transition: fill var(--transition);
 }
 
@@ -920,6 +923,7 @@ ul {
 }
 
 .modal-policy-link {
+  margin-left: 0.3em;
   color: var(--accent);
 }
 
@@ -928,16 +932,21 @@ ul {
 }
 
 .policy-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-right: 8px;
   width: 16px;
   height: 15px;
   border: 2px solid var(--header-logo-color);
   border-radius: 2px;
+  fill: transparent;
+  transition: border-color var(--transition), background-color var(--transition), fill var(--transition);
 }
 
-.policy-icon {
-  /* background-position: center; */
-  background-size: contain;
+.modal-input-policy:checked+.modal-policy-label .policy-icon-wrap {
+  border-color: transparent;
+  background-color: var(--accent);
   fill: var(--background-primary);
 }
 
