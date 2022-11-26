@@ -901,10 +901,8 @@ ul {
 
 .modal-input-icon {
   position: absolute;
-  /* top: 50%; */
   bottom: 11px;
   left: 12px;
-  /* transform: translateY(-50%); */
   transition: fill var(--transition);
 }
 
@@ -972,6 +970,8 @@ ul {
 .modal-submit-button:focus {
   background-color: var(--hero-button-active);
 }
+
+/* Стилізація фону інпуту під час автозаповнення */
 
 .footer-subscription-input:-webkit-autofill {
   -webkit-box-shadow: inset 0 0 0 50px var(--background-secondary);
