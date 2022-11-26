@@ -942,6 +942,10 @@ ul {
   transition: border-color var(--transition), background-color var(--transition), fill var(--transition);
 }
 
+.modal-input-policy:focus+.modal-policy-label .policy-icon-wrap {
+  border-color: var(--accent);
+}
+
 .modal-input-policy:checked+.modal-policy-label .policy-icon-wrap {
   border-color: transparent;
   background-color: var(--accent);
